@@ -126,18 +126,6 @@ export const portfolioItems = [
     description: "E-commerce de productos electrónicos y electrodomésticos.",
     image: getImage('portfolio-4'),
     link: "https://electrorios.netlify.app/"
-  },
-  {
-    title: "Proyecto Cliente E",
-    description: "Rediseño de sitio web para consultora profesional.",
-    image: getImage('portfolio-5'),
-    link: "#"
-  },
-  {
-    title: "Proyecto Cliente F",
-    description: "Portal de noticias y contenido digital.",
-    image: getImage('portfolio-6'),
-    link: "#"
   }
 ];
 
