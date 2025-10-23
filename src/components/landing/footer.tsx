@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex items-center gap-3 mb-4 md:mb-0">
           <Cpu className="h-8 w-8 text-accent" />
           <div>
-            <h2 className="text-xl font-bold text-white font-headline">Tecnolog<span className="text-accent">IA</span></h2>
+            <h2 className="text-xl font-bold text-background font-headline">Tecnolog<span className="text-accent">IA</span></h2>
             <p className="text-primary-foreground/70 text-sm">Llevamos tu negocio al siguiente nivel digital.</p>
           </div>
         </div>
