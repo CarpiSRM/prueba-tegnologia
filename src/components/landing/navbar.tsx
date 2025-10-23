@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <Cpu className="h-6 w-6 text-primary" />
+          <Cpu className="h-6 w-6 text-accent" />
           <span className="font-bold text-lg">TecnologIA</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
@@ -45,7 +45,7 @@ export default function Navbar() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
-          <Button asChild className="hidden md:flex bg-accent hover:bg-accent/90 text-accent-foreground rounded-full">
+          <Button asChild className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">
             <Link href="/servicios">¡Lleva tu negocio al siguiente nivel!</Link>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
@@ -58,7 +58,7 @@ export default function Navbar() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="p-4">
                 <div className="mb-8 flex items-center gap-2">
-                  <Cpu className="h-6 w-6 text-primary" />
+                  <Cpu className="h-6 w-6 text-accent" />
                   <span className="font-bold text-lg">TecnologIA</span>
                 </div>
                 <nav className="flex flex-col gap-4">
@@ -73,7 +73,7 @@ export default function Navbar() {
                     </Link>
                   ))}
                 </nav>
-                <Button asChild size="lg" className="mt-8 w-full bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setOpen(false)}>
+                <Button asChild size="lg" className="mt-8 w-full bg-primary hover:bg-primary/90 text-primary-foreground" onClick={() => setOpen(false)}>
                     <Link href="/servicios">¡Lleva tu negocio al siguiente nivel!</Link>
                 </Button>
               </div>

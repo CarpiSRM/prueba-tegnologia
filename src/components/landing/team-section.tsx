@@ -5,7 +5,7 @@ import { Leaf, TrendingUp, HeartHandshake, Users } from "lucide-react";
 
 const commitments = [
   {
-    icon: <TrendingUp className="h-6 w-6 text-primary" />,
+    icon: <TrendingUp className="h-6 w-6 text-accent" />,
     title: "Impulsamos la Economía Local",
     description: "Cada proyecto que realizamos es un paso más para fortalecer el ecosistema de PYMEs en Paraguay."
   },
@@ -15,7 +15,7 @@ const commitments = [
     description: "Nuestra operación es 100% digital, minimizando nuestra huella de carbono y promoviendo prácticas sostenibles."
   },
   {
-    icon: <HeartHandshake className="h-6 w-6 text-accent" />,
+    icon: <HeartHandshake className="h-6 w-6 text-primary" />,
     title: "Tecnología con Propósito",
     description: "Creemos en un futuro donde la tecnología es una herramienta de crecimiento e inclusión para todos."
   }
@@ -53,8 +53,8 @@ export default function TeamSection() {
         <div className="mt-20 flex justify-center">
             <Card className="w-full max-w-4xl shadow-lg">
                 <CardHeader className="text-center">
-                    <div className="mx-auto rounded-full bg-primary/10 p-4 w-fit mb-2">
-                        <Users className="h-8 w-8 text-primary" />
+                    <div className="mx-auto rounded-full bg-accent/10 p-4 w-fit mb-2">
+                        <Users className="h-8 w-8 text-accent" />
                     </div>
                     <CardTitle className="text-2xl">El Equipo Detrás de TecnologIA</CardTitle>
                     <CardContent className="pt-4">

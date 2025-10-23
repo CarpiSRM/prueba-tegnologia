@@ -10,17 +10,17 @@ const problems = [
 
 const solutions = [
   { 
-    icon: <Handshake className="h-8 w-8 text-primary" />,
+    icon: <Handshake className="h-8 w-8 text-accent" />,
     title: "Atención Personalizada",
     description: "Trabajamos contigo para entender tu negocio y crear una solución a tu medida."
   },
   { 
-    icon: <ShieldCheck className="h-8 w-8 text-primary" />,
+    icon: <ShieldCheck className="h-8 w-8 text-accent" />,
     title: "Soporte Constante",
     description: "Estamos aquí para ayudarte a crecer, con soporte técnico y estratégico continuo."
   },
   { 
-    icon: <Gem className="h-8 w-8 text-primary" />,
+    icon: <Gem className="h-8 w-8 text-accent" />,
     title: "Precios Justos",
     description: "Ofrecemos calidad profesional a precios transparentes y accesibles para emprendedores."
   },
@@ -56,11 +56,11 @@ export default function WhyUsSection() {
                 </div>
             </div>
             <div>
-                <h3 className="text-2xl font-semibold mb-4 text-primary">Nuestra Solución <span className="text-accent">TecnologIA</span></h3>
+                <h3 className="text-2xl font-semibold mb-4 text-accent">Nuestra Solución <span className="text-primary">TecnologIA</span></h3>
                 <div className="space-y-4">
                     {solutions.map((solution) => (
                         <div key={solution.title} className="flex items-start gap-4">
-                            <div className="bg-primary/10 p-3 rounded-full">{solution.icon}</div>
+                            <div className="bg-accent/10 p-3 rounded-full">{solution.icon}</div>
                             <div>
                                 <h4 className="font-bold">{solution.title}</h4>
                                 <p className="text-muted-foreground text-sm">{solution.description}</p>

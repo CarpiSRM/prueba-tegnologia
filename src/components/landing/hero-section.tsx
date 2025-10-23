@@ -10,8 +10,8 @@ export default function HeroSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">
-                Tecnolog<span className="text-accent">IA</span>
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-accent">
+                Tecnolog<span className="text-primary">IA</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-foreground/80">
                 Llevamos tu negocio al siguiente nivel digital.

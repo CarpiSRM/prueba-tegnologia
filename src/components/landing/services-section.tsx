@@ -9,7 +9,7 @@ import Link from "next/link";
 const PackageCard = ({ pkg, popular, children }: { pkg: any, popular?: boolean, children?: React.ReactNode }) => (
   <Card className={`flex flex-col ${popular ? 'border-primary border-2 shadow-primary/20' : ''}`}>
     <CardHeader>
-      {popular && <div className="text-accent font-bold flex items-center gap-1"><Star className="w-4 h-4 fill-accent" /> Popular</div>}
+      {popular && <div className="text-primary font-bold flex items-center gap-1"><Star className="w-4 h-4 fill-primary" /> Popular</div>}
       <CardTitle>{pkg.name}</CardTitle>
       <CardDescription className="flex items-baseline gap-1">
         <span className="text-3xl font-bold text-foreground">{pkg.price}</span>
