@@ -5,7 +5,7 @@ import { Leaf, TrendingUp, HeartHandshake, Users } from "lucide-react";
 
 const commitments = [
   {
-    icon: <TrendingUp className="h-6 w-6 text-accent" />,
+    icon: <TrendingUp className="h-6 w-6 text-primary" />,
     title: "Impulsamos la Economía Local",
     description: "Cada proyecto que realizamos es un paso más para fortalecer el ecosistema de PYMEs en Paraguay."
   },
@@ -15,7 +15,7 @@ const commitments = [
     description: "Nuestra operación es 100% digital, minimizando nuestra huella de carbono y promoviendo prácticas sostenibles."
   },
   {
-    icon: <HeartHandshake className="h-6 w-6 text-primary" />,
+    icon: <HeartHandshake className="h-6 w-6 text-accent" />,
     title: "Tecnología con Propósito",
     description: "Creemos en un futuro donde la tecnología es una herramienta de crecimiento e inclusión para todos."
   }
@@ -23,7 +23,7 @@ const commitments = [
 
 export default function TeamSection() {
   return (
-    <section id="equipo" className="w-full py-20 md:py-32 bg-white">
+    <section id="equipo" className="w-full py-20 md:py-32 bg-slate-50">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -38,7 +38,7 @@ export default function TeamSection() {
           {commitments.map((item) => (
             <Card key={item.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="items-center">
-                <div className="rounded-full bg-background p-4 mb-2">
+                <div className="rounded-full bg-primary/10 p-4 mb-2">
                     {item.icon}
                 </div>
                 <CardTitle>{item.title}</CardTitle>
@@ -53,8 +53,8 @@ export default function TeamSection() {
         <div className="mt-20 flex justify-center">
             <Card className="w-full max-w-4xl shadow-lg">
                 <CardHeader className="text-center">
-                    <div className="mx-auto rounded-full bg-accent/10 p-4 w-fit mb-2">
-                        <Users className="h-8 w-8 text-accent" />
+                    <div className="mx-auto rounded-full bg-primary/10 p-4 w-fit mb-2">
+                        <Users className="h-8 w-8 text-primary" />
                     </div>
                     <CardTitle className="text-2xl">El Equipo Detrás de TecnologIA</CardTitle>
                     <CardContent className="pt-4">

@@ -4,9 +4,9 @@ import ContactForm from "./contact-form";
 
 export default function ContactSection() {
   const contactDetails = [
-    { icon: <Phone className="h-5 w-5 text-primary" />, text: "+595 9XX XXX XXX (placeholder)" },
-    { icon: <Mail className="h-5 w-5 text-primary" />, text: "contacto@tecnologia.com.py (placeholder)" },
-    { icon: <MapPin className="h-5 w-5 text-primary" />, text: "Asunción, Paraguay (Operación 100% digital)" },
+    { icon: <Phone className="h-5 w-5 text-accent" />, text: "+595 9XX XXX XXX (placeholder)" },
+    { icon: <Mail className="h-5 w-5 text-accent" />, text: "contacto@tecnologia.com.py (placeholder)" },
+    { icon: <MapPin className="h-5 w-5 text-accent" />, text: "Asunción, Paraguay (Operación 100% digital)" },
   ];
 
   return (

@@ -10,8 +10,8 @@ export default function HeroSection() {
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
             <div className="space-y-4">
-              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-accent">
-                Tecnolog<span className="text-primary">IA</span>
+              <h1 className="text-4xl font-extrabold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl font-headline text-primary">
+                Tecnolog<span className="text-accent">IA</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold text-foreground/80">
                 Llevamos tu negocio al siguiente nivel digital.
@@ -21,7 +21,7 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg transition-transform hover:scale-105">
+              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground rounded-full shadow-lg transition-transform hover:scale-105">
                 <Link href="/servicios">Conoce nuestros servicios</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full border-primary text-primary hover:bg-primary/10 shadow-lg transition-transform hover:scale-105">

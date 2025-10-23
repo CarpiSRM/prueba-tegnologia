@@ -4,7 +4,7 @@ import { Target, Rocket, Eye } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="quienes-somos" className="w-full py-20 md:py-32 bg-white">
+    <section id="quienes-somos" className="w-full py-20 md:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -17,8 +17,8 @@ export default function AboutSection() {
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-3 md:gap-12 lg:max-w-none mt-12">
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-full bg-accent/10 p-3">
-                <Rocket className="h-6 w-6 text-accent" />
+              <div className="rounded-full bg-primary/10 p-3">
+                <Rocket className="h-6 w-6 text-primary" />
               </div>
               <CardTitle>Misión</CardTitle>
             </CardHeader>
@@ -28,10 +28,10 @@ export default function AboutSection() {
               </p>
             </CardContent>
           </Card>
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-accent scale-105 bg-background">
+          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 border-accent scale-105 bg-accent/5">
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-full bg-accent/10 p-3">
-                <Target className="h-6 w-6 text-accent" />
+              <div className="rounded-full bg-primary/10 p-3">
+                <Target className="h-6 w-6 text-primary" />
               </div>
               <CardTitle>Propósito Principal</CardTitle>
             </CardHeader>
@@ -43,8 +43,8 @@ export default function AboutSection() {
           </Card>
           <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="flex flex-row items-center gap-4">
-              <div className="rounded-full bg-accent/10 p-3">
-                <Eye className="h-6 w-6 text-accent" />
+              <div className="rounded-full bg-primary/10 p-3">
+                <Eye className="h-6 w-6 text-primary" />
               </div>
               <CardTitle>Visión</CardTitle>
             </CardHeader>

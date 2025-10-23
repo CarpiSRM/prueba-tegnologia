@@ -20,7 +20,7 @@ const initialState = {
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" disabled={pending} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+    <Button type="submit" disabled={pending} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
       {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Lightbulb className="mr-2 h-4 w-4" />}
       Generar Ideas
     </Button>
@@ -43,9 +43,9 @@ export default function SeoTool() {
   }, [state, toast]);
 
   return (
-    <Card className="w-full max-w-md shadow-2xl bg-white/30 backdrop-blur-sm border-accent/20">
+    <Card className="w-full max-w-md shadow-2xl bg-slate-50 backdrop-blur-sm border-primary/20">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-accent">
+        <CardTitle className="flex items-center gap-2 text-primary">
           Impulsa tu SEO con IA
         </CardTitle>
         <CardDescription>
@@ -72,7 +72,7 @@ export default function SeoTool() {
               </h4>
               <div className="flex flex-wrap gap-2">
                 {state.data.keywords.map((keyword: string) => (
-                  <Badge key={keyword} variant="secondary" className="bg-accent/10 text-accent-foreground border-accent/20">
+                  <Badge key={keyword} variant="secondary" className="bg-primary/10 text-primary-foreground border-primary/20">
                     {keyword}
                   </Badge>
                 ))}
