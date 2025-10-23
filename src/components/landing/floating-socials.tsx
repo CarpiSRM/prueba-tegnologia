@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function FloatingSocials() {
   const socialLinks = [
     {
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/profile.php?id=61582558119246",
       icon: <Facebook className="h-5 w-5" />,
       label: "Facebook",
     },
