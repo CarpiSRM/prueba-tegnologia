@@ -1,7 +1,28 @@
 
 import { Button } from "@/components/ui/button";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
 import Link from "next/link";
+
+function WhatsAppIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="lucide lucide-message-circle"
+    >
+      <path d="M7.9 20.6a9 9 0 1 0-9-9" />
+      <path d="M12 18h.01" />
+    </svg>
+  );
+}
+
 
 export default function FloatingSocials() {
   const socialLinks = [
@@ -16,9 +37,14 @@ export default function FloatingSocials() {
       label: "Instagram",
     },
     {
-      href: "https://linkedin.com",
-      icon: <Linkedin className="h-5 w-5" />,
-      label: "LinkedIn",
+      href: "https://wa.me/595986722902",
+      icon: <WhatsAppIcon />,
+      label: "WhatsApp 1",
+    },
+    {
+      href: "https://wa.me/595975402061",
+      icon: <WhatsAppIcon />,
+      label: "WhatsApp 2",
     },
   ];
 

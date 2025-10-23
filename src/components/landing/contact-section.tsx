@@ -1,11 +1,12 @@
 
 import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "./contact-form";
+import Link from "next/link";
 
 export default function ContactSection() {
   const contactDetails = [
-    { icon: <Phone className="h-5 w-5 text-accent" />, text: "+595 9XX XXX XXX (placeholder)" },
-    { icon: <Mail className="h-5 w-5 text-accent" />, text: "contacto@tecnologia.com.py (placeholder)" },
+    { icon: <Phone className="h-5 w-5 text-accent" />, text: "+595 986 722 902 / +595 975 402 061" },
+    { icon: <Mail className="h-5 w-5 text-accent" />, text: "tecnologiamarketin@gmail.com", isLink: true, href: "mailto:tecnologiamarketin@gmail.com" },
     { icon: <MapPin className="h-5 w-5 text-accent" />, text: "Asunción, Paraguay (Operación 100% digital)" },
   ];
 
@@ -30,7 +31,11 @@ export default function ContactSection() {
               {contactDetails.map((detail, index) => (
                 <div key={index} className="flex items-center gap-3">
                   {detail.icon}
-                  <span className="text-muted-foreground">{detail.text}</span>
+                  {detail.isLink ? (
+                     <Link href={detail.href!} className="text-muted-foreground hover:text-accent transition-colors" target="_blank">{detail.text}</Link>
+                  ) : (
+                    <span className="text-muted-foreground">{detail.text}</span>
+                  )}
                 </div>
               ))}
             </div>

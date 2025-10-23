@@ -59,9 +59,33 @@ export async function sendContactForm(prevState: any, formData: FormData) {
     };
   }
 
-  // Here you would typically send an email.
-  // For this example, we'll just log it and simulate a success response.
-  console.log('Contact Form Submission:');
+  // ** Email Sending Logic **
+  // This is where you would integrate an email sending service (e.g., Resend, SendGrid).
+  // The `validatedFields.data` object contains the form submission.
+  // Example:
+  //
+  // import { Resend } from 'resend';
+  // const resend = new Resend(process.env.RESEND_API_KEY);
+  //
+  // try {
+  //   await resend.emails.send({
+  //     from: 'onboarding@resend.dev',
+  //     to: 'tecnologiamarketin@gmail.com',
+  //     subject: `Nuevo Mensaje de Contacto de ${validatedFields.data.name}`,
+  //     html: `<p><strong>Nombre:</strong> ${validatedFields.data.name}</p>
+  //            <p><strong>Email:</strong> ${validatedFields.data.email}</p>
+  //            <p><strong>Mensaje:</strong> ${validatedFields.data.message}</p>`,
+  //   });
+  // } catch (error) {
+  //    console.error('Email sending error:', error);
+  //    return {
+  //      message: 'Hubo un error al enviar el mensaje. Inténtalo más tarde.',
+  //      errors: null,
+  //      success: false,
+  //    };
+  // }
+
+  console.log('Contact Form Submission for tecnologiamarketin@gmail.com:');
   console.log(validatedFields.data);
 
   return {
