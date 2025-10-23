@@ -28,10 +28,14 @@ function SubmitButton() {
   );
 }
 
-export default function ContactForm() {
+export default function ContactForm({ selectedPlan }: { selectedPlan?: string }) {
   const [state, formAction] = useActionState(sendContactForm, initialState);
   const { toast } = useToast();
   const formRef = useRef<HTMLFormElement>(null);
+
+  const defaultMessage = selectedPlan
+    ? `Estoy interesado/a en el plan: ${selectedPlan}.`
+    : '';
 
   useEffect(() => {
     if (state.success) {
@@ -70,7 +74,13 @@ export default function ContactForm() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="message" className="text-muted-foreground">Mensaje</Label>
-            <Textarea id="message" name="message" placeholder="Cuéntanos sobre tu idea o negocio..." className="min-h-[100px] bg-input border-border text-foreground" />
+            <Textarea 
+              id="message" 
+              name="message" 
+              placeholder="Cuéntanos sobre tu idea o negocio..." 
+              className="min-h-[100px] bg-input border-border text-foreground" 
+              defaultValue={defaultMessage}
+            />
             {state?.errors?.message && <p className="text-sm text-red-500">{state.errors.message[0]}</p>}
           </div>
           <SubmitButton />

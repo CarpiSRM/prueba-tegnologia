@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "./contact-form";
 import Link from "next/link";
 
-export default function ContactSection() {
+export default function ContactSection({ selectedPlan }: { selectedPlan?: string }) {
   const contactDetails = [
     { icon: <Phone className="h-5 w-5 text-accent" />, text: "+595 986 722 902 / +595 975 402 061" },
     { icon: <Mail className="h-5 w-5 text-accent" />, text: "tecnologiamarketin@gmail.com", isLink: true, href: "mailto:tecnologiamarketin@gmail.com" },
@@ -41,7 +41,7 @@ export default function ContactSection() {
             </div>
           </div>
           <div>
-            <ContactForm />
+            <ContactForm selectedPlan={selectedPlan} />
           </div>
         </div>
       </div>

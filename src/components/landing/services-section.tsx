@@ -29,7 +29,7 @@ const PackageCard = ({ pkg, popular, children }: { pkg: any, popular?: boolean, 
     </CardContent>
     <CardFooter>
       <Button asChild className={`w-full ${popular ? 'bg-accent text-accent-foreground' : 'bg-primary text-primary-foreground'}`}>
-        <Link href="/contacto">{pkg.cta}</Link>
+        <Link href={`/contacto?plan=${encodeURIComponent(pkg.name)}`}>{pkg.cta}</Link>
       </Button>
     </CardFooter>
   </Card>
@@ -78,7 +78,7 @@ export default function ServicesSection() {
                     </CardContent>
                     <CardFooter>
                          <Button asChild variant="outline" className="w-full">
-                            <Link href="/contacto">{maintenancePackage.cta}</Link>
+                            <Link href={`/contacto?plan=${encodeURIComponent(maintenancePackage.name)}`}>{maintenancePackage.cta}</Link>
                         </Button>
                     </CardFooter>
                 </Card>
