@@ -23,7 +23,7 @@ const commitments = [
 
 export default function TeamSection() {
   return (
-    <section id="equipo" className="w-full py-20 md:py-32 bg-white scroll-mt-16">
+    <section id="equipo" className="w-full py-20 md:py-32 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

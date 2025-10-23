@@ -10,19 +10,20 @@ export default function ContactSection() {
   ];
 
   return (
-    <footer id="contacto" className="w-full bg-slate-900 text-slate-300 py-20 md:py-32 scroll-mt-16">
+    <section id="contacto" className="w-full bg-slate-900 text-slate-300 py-20 md:py-32">
       <div className="container px-4 md:px-6">
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <BotMessageSquare className="h-10 w-10 text-primary" />
-              <div>
-                <h2 className="text-3xl font-bold text-white font-headline">Tecnolog<span className="text-accent">IA</span></h2>
-                <p className="text-primary-foreground/70">Llevamos tu negocio al siguiente nivel digital.</p>
-              </div>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
+            <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline text-white">Contacto</h2>
+                <p className="max-w-[900px] text-slate-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                    ¿Listo para empezar? Envíanos un mensaje y hablemos.
+                </p>
             </div>
+        </div>
+        <div className="grid md:grid-cols-2 gap-12">
+          <div className="space-y-6 flex flex-col justify-center">
             <p className="text-primary-foreground/70 max-w-md">
-              ¿Listo para empezar? Envíanos un mensaje y uno de nuestros expertos se pondrá en contacto contigo para discutir cómo podemos ayudarte a alcanzar tus metas.
+              Envíanos un mensaje y uno de nuestros expertos se pondrá en contacto contigo para discutir cómo podemos ayudarte a alcanzar tus metas.
             </p>
             <div className="space-y-4">
               {contactDetails.map((detail, index) => (
@@ -37,10 +38,7 @@ export default function ContactSection() {
             <ContactForm />
           </div>
         </div>
-        <div className="border-t border-slate-700 mt-16 pt-8 text-center text-sm text-slate-500">
-          <p>&copy; {new Date().getFullYear()} TecnologIA. Todos los derechos reservados.</p>
-        </div>
       </div>
-    </footer>
+    </section>
   );
 }

@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Handshake, Zap, ShieldCheck, Gem } from "lucide-react";
+import { Handshake, ShieldCheck, Gem } from "lucide-react";
 
 const problems = [
   { title: "Costos Elevados", description: "Agencias con precios inaccesibles para PYMEs." },
@@ -28,7 +28,7 @@ const solutions = [
 
 export default function WhyUsSection() {
   return (
-    <section id="porque-elegirnos" className="w-full py-20 md:py-32 bg-white scroll-mt-16">
+    <section id="porque-elegirnos" className="w-full py-20 md:py-32 bg-white">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

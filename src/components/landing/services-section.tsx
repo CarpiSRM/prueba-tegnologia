@@ -2,8 +2,9 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Check, Star, Code, Annoyed } from "lucide-react";
+import { Check, Star } from "lucide-react";
 import { webDevPackages, adsPackages, maintenancePackage } from "@/lib/data";
+import Link from "next/link";
 
 const PackageCard = ({ pkg, popular, children }: { pkg: any, popular?: boolean, children?: React.ReactNode }) => (
   <Card className={`flex flex-col ${popular ? 'border-primary border-2 shadow-primary/20' : ''}`}>
@@ -28,7 +29,7 @@ const PackageCard = ({ pkg, popular, children }: { pkg: any, popular?: boolean, 
     </CardContent>
     <CardFooter>
       <Button asChild className={`w-full ${popular ? 'bg-primary text-primary-foreground' : 'bg-accent text-accent-foreground'}`}>
-        <a href="#contacto">{pkg.cta}</a>
+        <Link href="/contacto">{pkg.cta}</Link>
       </Button>
     </CardFooter>
   </Card>
@@ -36,7 +37,7 @@ const PackageCard = ({ pkg, popular, children }: { pkg: any, popular?: boolean, 
 
 export default function ServicesSection() {
   return (
-    <section id="servicios" className="w-full py-20 md:py-32 bg-background scroll-mt-16">
+    <section id="servicios" className="w-full py-20 md:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -77,7 +78,7 @@ export default function ServicesSection() {
                     </CardContent>
                     <CardFooter>
                          <Button asChild variant="outline" className="w-full">
-                            <a href="#contacto">{maintenancePackage.cta}</a>
+                            <Link href="/contacto">{maintenancePackage.cta}</Link>
                         </Button>
                     </CardFooter>
                 </Card>

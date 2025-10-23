@@ -25,7 +25,7 @@ export default function Navbar() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur-lg border-b" : "bg-transparent"
+        isScrolled ? "bg-background/80 backdrop-blur-lg border-b" : "bg-background"
       )}
     >
       <div className="container flex h-16 items-center">
@@ -46,7 +46,7 @@ export default function Navbar() {
         </nav>
         <div className="flex flex-1 items-center justify-end gap-4">
           <Button asChild className="hidden md:flex bg-accent hover:bg-accent/90 text-accent-foreground rounded-full">
-            <Link href="#servicios">¡Lleva tu negocio al siguiente nivel!</Link>
+            <Link href="/servicios">¡Lleva tu negocio al siguiente nivel!</Link>
           </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -74,7 +74,7 @@ export default function Navbar() {
                   ))}
                 </nav>
                 <Button asChild size="lg" className="mt-8 w-full bg-accent hover:bg-accent/90 text-accent-foreground" onClick={() => setOpen(false)}>
-                    <Link href="#servicios">¡Lleva tu negocio al siguiente nivel!</Link>
+                    <Link href="/servicios">¡Lleva tu negocio al siguiente nivel!</Link>
                 </Button>
               </div>
             </SheetContent>

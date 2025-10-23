@@ -5,7 +5,7 @@ import SeoTool from "@/components/ai/seo-tool";
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="w-full py-20 md:py-32 bg-background scroll-mt-16">
+    <section id="inicio" className="w-full py-20 md:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-6">
@@ -22,10 +22,10 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg transition-transform hover:scale-105">
-                <Link href="#servicios">Conoce nuestros servicios</Link>
+                <Link href="/servicios">Conoce nuestros servicios</Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="rounded-full border-primary text-primary hover:bg-primary/10 shadow-lg transition-transform hover:scale-105">
-                <Link href="#portafolio">Ver portafolio</Link>
+                <Link href="/portafolio">Ver portafolio</Link>
               </Button>
             </div>
           </div>

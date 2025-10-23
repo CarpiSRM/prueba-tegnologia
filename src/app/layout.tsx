@@ -4,6 +4,7 @@ import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import Navbar from '@/components/landing/navbar';
 import FloatingSocials from '@/components/landing/floating-socials';
+import Footer from '@/components/landing/footer';
 
 export const metadata: Metadata = {
   title: 'TecnologIA - Llevamos tu negocio al siguiente nivel digital',
@@ -17,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -28,6 +29,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <FloatingSocials />
+          <Footer />
         </div>
         <Toaster />
       </body>

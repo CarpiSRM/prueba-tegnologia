@@ -1,12 +1,12 @@
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { portfolioItems } from "@/lib/data";
 import Image from "next/image";
 
 export default function PortfolioSection() {
   return (
-    <section id="portafolio" className="w-full py-20 md:py-32 bg-background scroll-mt-16">
+    <section id="portafolio" className="w-full py-20 md:py-32 bg-background">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
