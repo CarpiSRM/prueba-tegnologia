@@ -74,11 +74,11 @@ export default function ContactForm({ selectedPlan }: { selectedPlan?: string })
           </div>
           <div className="space-y-2">
             <Label htmlFor="message" className="text-muted-foreground">Mensaje</Label>
-            <Textarea 
-              id="message" 
-              name="message" 
-              placeholder="Cuéntanos sobre tu idea o negocio..." 
-              className="min-h-[100px] bg-input border-border text-foreground" 
+            <Textarea
+              id="message"
+              name="message"
+              placeholder="Cuéntanos sobre tu idea o negocio..."
+              className="min-h-[100px] bg-input border-border text-foreground"
               defaultValue={defaultMessage}
             />
             {state?.errors?.message && <p className="text-sm text-red-500">{state.errors.message[0]}</p>}
