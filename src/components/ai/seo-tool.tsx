@@ -1,8 +1,8 @@
 
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
-import { useEffect, useRef } from 'react';
+import { useActionState, useEffect, useRef } from 'react';
+import { useFormStatus } from 'react-dom';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
@@ -28,12 +28,12 @@ function SubmitButton() {
 }
 
 export default function SeoTool() {
-  const [state, formAction] = useFormState(generateSeoAction, initialState);
+  const [state, formAction] = useActionState(generateSeoAction, initialState);
   const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
 
   useEffect(() => {
-    if (state.message && !state.success && state.errors) {
+    if (state.message && state.errors) {
       toast({
         variant: "destructive",
         title: "Error de validación",
