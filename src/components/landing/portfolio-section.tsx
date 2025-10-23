@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardFooter, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { portfolioItems } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function PortfolioSection() {
   return (
@@ -38,8 +39,8 @@ export default function PortfolioSection() {
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
               <CardFooter>
-                <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary/10 hover:text-primary">
-                  <a href={item.link} target="_blank" rel="noopener noreferrer">Ver Sitio</a>
+                <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+                  <Link href={item.link} target="_blank" rel="noopener noreferrer">Ver Sitio</Link>
                 </Button>
               </CardFooter>
             </Card>
