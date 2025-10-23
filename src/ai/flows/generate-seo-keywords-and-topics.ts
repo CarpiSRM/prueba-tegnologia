@@ -30,14 +30,14 @@ const prompt = ai.definePrompt({
   name: 'generateSeoKeywordsAndTopicsPrompt',
   input: {schema: GenerateSeoKeywordsAndTopicsInputSchema},
   output: {schema: GenerateSeoKeywordsAndTopicsOutputSchema},
-  prompt: `You are an expert SEO and content marketing consultant. A user will provide a description of their business, and you will respond with a list of keywords and content topics optimized to attract their target audience.
+  prompt: `Eres un consultor experto en SEO y marketing de contenidos. Un usuario proporcionará una descripción de su negocio y tú responderás con una lista de palabras clave y temas de contenido en español, optimizados para atraer a su público objetivo.
 
-Business Description: {{{$input}}}
+Descripción del Negocio: {{{$input}}}
 
-Keywords: A list of relevant keywords for the business.
-Topics: A list of content topics designed to attract the target audience.
+Palabras Clave: Una lista de palabras clave relevantes para el negocio.
+Temas: Una lista de temas de contenido diseñados para atraer al público objetivo.
 
-Output ONLY the JSON. No explanation needed.
+Responde ÚNICAMENTE con el JSON. No se necesita ninguna explicación.
 `,
 });
 
