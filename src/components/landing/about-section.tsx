@@ -15,41 +15,41 @@ export default function AboutSection() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl items-start gap-8 sm:grid-cols-1 md:grid-cols-3 md:gap-12 lg:max-w-none mt-12">
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-accent text-accent-foreground">
+          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="rounded-full bg-primary/20 p-3">
-                <Rocket className="h-6 w-6 text-primary" />
+                <Rocket className="h-6 w-6 text-accent" />
               </div>
-              <CardTitle className="text-accent-foreground">Misión</CardTitle>
+              <CardTitle>Misión</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-accent-foreground/90">
+              <p className="text-muted-foreground">
                 Empoderar a pequeñas empresas con desarrollo web accesible, diseños modernos y calidad profesional garantizada.
               </p>
             </CardContent>
           </Card>
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-accent text-accent-foreground scale-105">
+          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground scale-105 border-accent">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="rounded-full bg-primary/20 p-3">
-                <Target className="h-6 w-6 text-primary" />
+                <Target className="h-6 w-6 text-accent" />
               </div>
-              <CardTitle className="text-accent-foreground">Propósito Principal</CardTitle>
+              <CardTitle>Propósito Principal</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-accent-foreground/90">
+              <p className="text-muted-foreground">
                 Conectar negocios tradicionales con el mundo digital de forma simple y asequible, democratizando el acceso tecnológico para potenciar el crecimiento local.
               </p>
             </CardContent>
           </Card>
-          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-accent text-accent-foreground">
+          <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300 bg-card text-card-foreground">
             <CardHeader className="flex flex-row items-center gap-4">
               <div className="rounded-full bg-primary/20 p-3">
-                <Eye className="h-6 w-6 text-primary" />
+                <Eye className="h-6 w-6 text-accent" />
               </div>
-              <CardTitle className="text-accent-foreground">Visión</CardTitle>
+              <CardTitle>Visión</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-accent-foreground/90">
+              <p className="text-muted-foreground">
                 Ser la empresa líder en Paraguay en la transformación digital de PYMEs, siendo un referente de innovación, calidad y confianza.
               </p>
             </CardContent>
