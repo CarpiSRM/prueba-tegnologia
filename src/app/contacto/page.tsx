@@ -1,5 +1,9 @@
 import ContactSection from "@/components/landing/contact-section";
 
 export default function ContactoPage() {
-  return <ContactSection />;
+  return (
+    <div className="bg-slate-900">
+      <ContactSection />
+    </div>
+  );
 }

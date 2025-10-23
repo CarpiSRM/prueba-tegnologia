@@ -1,5 +1,5 @@
 
-import { BotMessageSquare, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import ContactForm from "./contact-form";
 
 export default function ContactSection() {
@@ -22,14 +22,15 @@ export default function ContactSection() {
         </div>
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6 flex flex-col justify-center">
-            <p className="text-primary-foreground/70 max-w-md">
-              Envíanos un mensaje y uno de nuestros expertos se pondrá en contacto contigo para discutir cómo podemos ayudarte a alcanzar tus metas.
+            <h3 className="text-2xl font-semibold text-white">Información de Contacto</h3>
+            <p className="text-slate-400 max-w-md">
+              Puedes contactarnos a través de los siguientes medios o llenando el formulario. Uno de nuestros expertos se pondrá en contacto contigo para discutir cómo podemos ayudarte a alcanzar tus metas.
             </p>
             <div className="space-y-4">
               {contactDetails.map((detail, index) => (
                 <div key={index} className="flex items-center gap-3">
                   {detail.icon}
-                  <span className="text-primary-foreground/90">{detail.text}</span>
+                  <span className="text-slate-300">{detail.text}</span>
                 </div>
               ))}
             </div>
