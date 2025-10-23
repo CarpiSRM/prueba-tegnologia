@@ -30,7 +30,7 @@ export default function FloatingSocials() {
       className: "bg-[#1877F2] hover:bg-[#1877F2]/90 text-white",
     },
     {
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/tecnologiamarketin/",
       icon: <Instagram className="h-6 w-6" />,
       label: "Instagram",
       className: "bg-[#E4405F] hover:bg-[#E4405F]/90 text-white",
