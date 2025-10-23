@@ -25,12 +25,11 @@ export default function PortfolioSection() {
               {item.image && (
                 <div className="aspect-video w-full overflow-hidden">
                     <Image
-                    src={item.image.imageUrl}
+                    src={item.image}
                     alt={item.title}
                     width={600}
                     height={400}
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                    data-ai-hint={item.image.imageHint}
                     />
                 </div>
               )}

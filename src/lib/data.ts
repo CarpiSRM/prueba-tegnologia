@@ -10,8 +10,6 @@ export const navLinks = [
   { href: "/contacto", label: "Contacto" },
 ];
 
-const getImage = (id: string): ImagePlaceholder | undefined => PlaceHolderImages.find(img => img.id === id);
-
 export const webDevPackages = [
   {
     name: "Básico",
@@ -106,25 +104,25 @@ export const portfolioItems = [
   {
     title: "MaferClean",
     description: "Sitio web para servicios profesionales de limpieza.",
-    image: getImage('portfolio-1'),
+    image: "/portafolio/maferclean.jpg",
     link: "https://maferclean.netlify.app/"
   },
   {
     title: "Estilo Guarani",
     description: "Tienda online de moda con inspiración local.",
-    image: getImage('portfolio-2'),
+    image: "/portafolio/estilo-guarani.jpg",
     link: "https://estiloguarani.netlify.app/"
   },
   {
     title: "Baristas",
     description: "Página web para una cafetería moderna y acogedora.",
-    image: getImage('portfolio-3'),
+    image: "/portafolio/baristas.jpg",
     link: "https://cafeteriabaristas.netlify.app/"
   },
   {
     title: "ElectroRios",
     description: "E-commerce de productos electrónicos y electrodomésticos.",
-    image: getImage('portfolio-4'),
+    image: "/portafolio/electrorios.jpg",
     link: "https://electrorios.netlify.app/"
   }
 ];

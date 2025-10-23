@@ -1,0 +1,9 @@
+You can place your portfolio images in this directory.
+
+For example:
+- maferclean.jpg
+- estilo-guarani.jpg
+- baristas.jpg
+- electrorios.jpg
+
+Make sure the filenames match the ones specified in `src/lib/data.ts`.
