@@ -104,28 +104,28 @@ export const adsPackages = [
 
 export const portfolioItems = [
   {
-    title: "Proyecto Cliente A",
-    description: "Desarrollo web corporativo con blog integrado.",
+    title: "MaferClean",
+    description: "Sitio web para servicios profesionales de limpieza.",
     image: getImage('portfolio-1'),
-    link: "#"
+    link: "https://maferclean.netlify.app/"
   },
   {
-    title: "Proyecto Cliente B",
-    description: "Plataforma de e-commerce para una tienda de moda.",
+    title: "Estilo Guarani",
+    description: "Tienda online de moda con inspiración local.",
     image: getImage('portfolio-2'),
-    link: "#"
+    link: "https://estiloguarani.netlify.app/"
   },
   {
-    title: "Proyecto Cliente C",
-    description: "Landing page optimizada para campaña de marketing.",
+    title: "Baristas",
+    description: "Página web para una cafetería moderna y acogedora.",
     image: getImage('portfolio-3'),
-    link: "#"
+    link: "https://cafeteriabaristas.netlify.app/"
   },
   {
-    title: "Proyecto Cliente D",
-    description: "Sitio web para un restaurante con sistema de reservas.",
+    title: "ElectroRios",
+    description: "E-commerce de productos electrónicos y electrodomésticos.",
     image: getImage('portfolio-4'),
-    link: "#"
+    link: "https://electrorios.netlify.app/"
   },
   {
     title: "Proyecto Cliente E",
