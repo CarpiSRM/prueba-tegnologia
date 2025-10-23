@@ -3,7 +3,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { Menu, X, BotMessageSquare } from "lucide-react";
+import { Menu, X, Cpu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
@@ -30,7 +30,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <BotMessageSquare className="h-6 w-6 text-primary" />
+          <Cpu className="h-6 w-6 text-primary" />
           <span className="font-bold text-lg">TecnologIA</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
@@ -58,7 +58,7 @@ export default function Navbar() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="p-4">
                 <div className="mb-8 flex items-center gap-2">
-                  <BotMessageSquare className="h-6 w-6 text-primary" />
+                  <Cpu className="h-6 w-6 text-primary" />
                   <span className="font-bold text-lg">TecnologIA</span>
                 </div>
                 <nav className="flex flex-col gap-4">
