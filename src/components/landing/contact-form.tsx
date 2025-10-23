@@ -51,26 +51,26 @@ export default function ContactForm() {
   }, [state, toast]);
 
   return (
-    <Card className="bg-card border-border">
+    <Card className="bg-card border-border text-card-foreground">
       <CardHeader>
-        <CardTitle className="text-foreground">Hablemos de tu proyecto</CardTitle>
+        <CardTitle>Hablemos de tu proyecto</CardTitle>
         <CardDescription className="text-muted-foreground">Completa el formulario y nos pondremos en contacto.</CardDescription>
       </CardHeader>
       <CardContent>
         <form ref={formRef} action={formAction} className="space-y-4">
           <div className="space-y-2">
             <Label htmlFor="name" className="text-muted-foreground">Nombre</Label>
-            <Input id="name" name="name" placeholder="Tu nombre" className="bg-background border-input text-foreground" />
+            <Input id="name" name="name" placeholder="Tu nombre" className="bg-input border-border text-foreground" />
             {state?.errors?.name && <p className="text-sm text-red-500">{state.errors.name[0]}</p>}
           </div>
           <div className="space-y-2">
             <Label htmlFor="email" className="text-muted-foreground">Email</Label>
-            <Input id="email" name="email" type="email" placeholder="tu@email.com" className="bg-background border-input text-foreground" />
+            <Input id="email" name="email" type="email" placeholder="tu@email.com" className="bg-input border-border text-foreground" />
             {state?.errors?.email && <p className="text-sm text-red-500">{state.errors.email[0]}</p>}
           </div>
           <div className="space-y-2">
             <Label htmlFor="message" className="text-muted-foreground">Mensaje</Label>
-            <Textarea id="message" name="message" placeholder="Cuéntanos sobre tu idea o negocio..." className="min-h-[100px] bg-background border-input text-foreground" />
+            <Textarea id="message" name="message" placeholder="Cuéntanos sobre tu idea o negocio..." className="min-h-[100px] bg-input border-border text-foreground" />
             {state?.errors?.message && <p className="text-sm text-red-500">{state.errors.message[0]}</p>}
           </div>
           <SubmitButton />

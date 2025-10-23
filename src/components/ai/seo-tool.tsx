@@ -43,12 +43,12 @@ export default function SeoTool() {
   }, [state, toast]);
 
   return (
-    <Card className="w-full max-w-md shadow-2xl bg-slate-50 backdrop-blur-sm border-primary/20">
+    <Card className="w-full max-w-md shadow-2xl bg-card text-card-foreground backdrop-blur-sm border-primary/20">
       <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-primary">
+        <CardTitle className="flex items-center gap-2">
           Impulsa tu SEO con IA
         </CardTitle>
-        <CardDescription>
+        <CardDescription className='text-muted-foreground'>
           ¿No sabes sobre qué escribir? Describe tu negocio y nuestra IA te dará palabras clave y temas de contenido.
         </CardDescription>
       </CardHeader>
@@ -57,7 +57,7 @@ export default function SeoTool() {
           <Textarea
             name="businessDescription"
             placeholder="Ej: Vendo muebles de madera artesanales en Asunción, enfocados en un diseño moderno y minimalista..."
-            className="min-h-[100px] bg-white"
+            className="min-h-[100px] bg-input text-foreground"
             aria-label="Descripción del negocio"
           />
           <SubmitButton />

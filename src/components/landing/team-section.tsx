@@ -23,7 +23,7 @@ const commitments = [
 
 export default function TeamSection() {
   return (
-    <section id="equipo" className="w-full py-20 md:py-32 bg-slate-50">
+    <section id="equipo" className="w-full py-20 md:py-32 bg-card">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -36,7 +36,7 @@ export default function TeamSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
           {commitments.map((item) => (
-            <Card key={item.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card key={item.title} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300 bg-background">
               <CardHeader className="items-center">
                 <div className="rounded-full bg-primary/10 p-4 mb-2">
                     {item.icon}
@@ -51,7 +51,7 @@ export default function TeamSection() {
         </div>
 
         <div className="mt-20 flex justify-center">
-            <Card className="w-full max-w-4xl shadow-lg">
+            <Card className="w-full max-w-4xl shadow-lg bg-background">
                 <CardHeader className="text-center">
                     <div className="mx-auto rounded-full bg-primary/10 p-4 w-fit mb-2">
                         <Users className="h-8 w-8 text-primary" />

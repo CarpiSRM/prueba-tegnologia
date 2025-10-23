@@ -28,7 +28,7 @@ const solutions = [
 
 export default function WhyUsSection() {
   return (
-    <section id="porque-elegirnos" className="w-full py-20 md:py-32 bg-slate-50">
+    <section id="porque-elegirnos" className="w-full py-20 md:py-32 bg-card">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
