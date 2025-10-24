@@ -14,8 +14,6 @@ export default function PortfolioSection() {
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl font-headline">Portafolio de Proyectos</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Estos son algunos ejemplos de cómo hemos ayudado a negocios como el tuyo a tener éxito en línea.
-              <br />
-              <span className="text-sm">(Esta sección está diseñada para que puedas actualizarla fácilmente con tus nuevos proyectos.)</span>
             </p>
           </div>
         </div>
