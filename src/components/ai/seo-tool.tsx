@@ -56,6 +56,7 @@ export default function SeoTool() {
         <form ref={formRef} action={formAction} className="space-y-4">
           <Textarea
             name="businessDescription"
+            readOnly
             placeholder="Ej: Vendo muebles de madera artesanales en Asunción, enfocados en un diseño moderno y minimalista..."
             className="min-h-[100px] bg-input text-foreground"
             aria-label="Descripción del negocio"
