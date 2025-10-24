@@ -18,10 +18,14 @@ const initialState = {
 };
 
 function SubmitButton() {
-  const { pending } = useFormStatus();
+  // const { pending } = useFormStatus();
   return (
-    <Button type="submit" disabled={pending} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
-      {pending ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : <Lightbulb className="mr-2 h-4 w-4" />}
+    <Button 
+      type="submit" 
+      disabled={true}
+      className="w-full bg-accent hover:bg-accent/90 text-accent-foreground opacity-60 cursor-not-allowed"
+    >
+      <Lightbulb className="mr-2 h-4 w-4" />
       Generar Ideas
     </Button>
   );

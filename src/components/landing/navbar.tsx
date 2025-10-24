@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <div className="container flex h-16 items-center">
         <Link href="/" className="mr-6 flex items-center gap-2">
-          <Image src="/logo.png" alt="TecnologIA Logo" width={24} height={24} />
+          <Image src="/logo.png" alt="TecnologIA Logo" width={32} height={32} />
           <span className="font-bold text-lg text-primary">Tecnolog<span className="text-accent">IA</span></span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm md:flex">
